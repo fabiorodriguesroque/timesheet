@@ -8,14 +8,20 @@
     "check-types": "tsc --noEmit"
   },
   "dependencies": {
-    "hono": "^4.13.16"
+    "dotenv": "^18.0.9",
+    "drizzle-orm": "^1.0.0-rc.5",
+    "hono": "^4.13.16",
+    "pg": "^8.23.1"
   },
   "devDependencies": {
     "@repo/oxlint-config": "workspace:*",
     "@repo/typescript-config": "workspace:*",
     "@types/bun": "latest",
+    "@types/pg": "^8.23.1",
+    "drizzle-kit": "^1.0.0-rc.5",
     "oxlint": "^1.92.0",
     "oxlint-tsgolint": "^7.0.2006",
+    "tsx": "^4.23.15",
     "typescript": "7.0.2"
   }
 }
