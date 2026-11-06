@@ -1,13 +1,21 @@
 {
   "name": "@repo/api",
+  "type": "module",
+  "private": true,
   "scripts": {
-    "dev": "bun run --hot src/index.ts"
+    "dev": "bun run --hot src/index.ts",
+    "lint": "oxlint --type-aware",
+    "check-types": "tsc --noEmit"
   },
   "dependencies": {
     "hono": "^4.13.16"
   },
   "devDependencies": {
+    "@repo/oxlint-config": "workspace:*",
     "@repo/typescript-config": "workspace:*",
-    "@types/bun": "latest"
+    "@types/bun": "latest",
+    "oxlint": "^1.92.0",
+    "oxlint-tsgolint": "^7.0.2006",
+    "typescript": "7.0.2"
   }
 }

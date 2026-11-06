@@ -16,7 +16,7 @@ This Turborepo includes the following packages/apps:
 
 ### Apps and Packages
 
-- `@repo/eslint-config`: `eslint` configurations (includes `eslint-config-prettier`)
+- `@repo/oxlint-config`: shared [Oxlint](https://oxc.rs/docs/guide/usage/linter) configuration
 - `@repo/typescript-config`: `tsconfig.json`s used throughout the monorepo
 
 Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
@@ -26,7 +26,7 @@ Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
 This Turborepo has some additional tools already setup for you:
 
 - [TypeScript](https://www.typescriptlang.org/) for static type checking
-- [ESLint](https://eslint.org/) for code linting
+- [Oxlint](https://oxc.rs/) for code linting (type-aware, powered by TypeScript 7)
 - [Prettier](https://prettier.io) for code formatting
 
 ### Build
