@@ -6,7 +6,7 @@ Extend it from a package's `.oxlintrc.json` (JSON configs only support relative 
 
 ```jsonc
 {
-  "extends": ["./node_modules/@repo/oxlint-config/base.json"]
+  "extends": ["./node_modules/@repo/oxlint-config/base.json"],
 }
 ```
 

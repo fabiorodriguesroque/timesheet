@@ -1,0 +1,6 @@
+bun.lock
+**/routeTree.gen.ts
+**/.output
+**/.nitro
+**/.tanstack
+**/dist
