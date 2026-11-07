@@ -26,7 +26,6 @@
     "drizzle-kit": "^1.0.0-rc.5",
     "oxlint": "^1.92.0",
     "oxlint-tsgolint": "^7.0.2006",
-    "tsx": "^4.23.15",
     "typescript": "7.0.2"
   }
 }
