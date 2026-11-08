@@ -32,8 +32,9 @@ faz um pedido `OPTIONS` (preflight) antes de cada `POST`.
 ## Depois do CORS
 
 ### Web
-- [ ] `auth-client.ts`: trocar o URL fixo `'http://localhost:3001'` por `import.meta.env.VITE_API_URL`
-- [ ] Criar `apps/web/.env.example` com `VITE_API_URL=`
+- [x] `auth-client.ts`: trocar o URL fixo `'http://localhost:3001'` por `config.api.url`
+  - `apps/web/src/config/index.ts` lê `import.meta.env.VITE_API_URL` (fallback `http://localhost:3001`, sem validação por agora)
+- [x] Criar `apps/web/.env.example` com `VITE_API_URL=`
 - [ ] Implementar o sign-up / sign-in na web
 
 ### Config da API (migrar o que falta)
