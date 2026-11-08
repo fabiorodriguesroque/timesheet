@@ -40,13 +40,13 @@ faz um pedido `OPTIONS` (preflight) antes de cada `POST`.
 ### Config da API (migrar o que falta)
 - [ ] `config/database.ts` → `url` (obrigatório, sem default)
   - usar em `db/index.ts` e `db/reset.ts` (e remover o `!`)
-- [ ] `config/auth.ts` → `secret` (obrigatório) e `url`, passados ao `betterAuth()` como `secret` e `baseURL`
+- [x] `config/auth.ts` → `secret` e `url` (ambos obrigatórios), passados ao `betterAuth()` como `secret` e `baseURL`
 - [ ] Remover o `import 'dotenv/config'` de `db/index.ts` e `db/reset.ts` (o Bun já carrega o `.env`)
   - manter **só** no `drizzle.config.ts` (o `drizzle-kit` corre em Node)
 
 ### Limpeza
-- [ ] `apps/api/.env.example`: acrescentar `PORT=` e `BETTER_AUTH_URL=`
-- [ ] `apps/api/.env`: apagar o `WEB_URL=` (vazio e sem uso)
+- [x] `apps/api/.env.example`: acrescentar `PORT=` e `BETTER_AUTH_URL=`
+- [x] `apps/api/.env`: apagar o `WEB_URL=` (vazio e sem uso)
 
 ## Lembretes
 
