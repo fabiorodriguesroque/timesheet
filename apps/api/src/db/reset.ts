@@ -1,10 +1,7 @@
-import 'dotenv/config'
 import { Client } from 'pg'
+import { config } from '../config'
 
-const url = process.env.DATABASE_URL
-if (!url) {
-  throw new Error('DATABASE_URL is not set')
-}
+const url = config.database.url
 
 const { hostname, pathname } = new URL(url)
 const LOCAL_HOSTS = ['localhost', '127.0.0.1', '::1']
